@@ -1,0 +1,96 @@
+#hero-container {
+    background: url("../assets/images/background/intro.svg") no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 94px;
+
+    &>section {
+        margin-block: auto;
+        gap: 80px;
+
+
+        &>div {
+            gap: 56px;
+
+            #hero-profile {
+                width: 112px;
+                padding: 8px;
+                margin-inline: auto;
+                position: relative;
+
+                &>img {
+                    position: absolute;
+                    bottom: 2px;
+                    right: 2px;
+                }
+
+                &>div {
+                    border: var(--red-color) solid 2px;
+                    border-radius: 100%;
+
+                    width: 96px;
+                    height: 96px;
+
+                    display: flex;
+                    align-items: center;
+
+                    &>img {
+                        width: 88px;
+                        align-self: center;
+                        margin-inline: auto;
+                    }
+                }
+            }
+
+            #hero-text {
+                margin-inline: auto;
+                max-width: 680px;
+                gap: 20px;
+
+                &>p {
+                    font: var(--text-sm);
+                    color: var(--gray-400);
+                }
+
+                &>div {
+                    gap: 8px;
+
+                    &>p{
+                        font: var(--subtitle-md);
+                    }
+                }
+            }
+
+        }
+
+
+        &>ul {
+            display: flex;
+            gap: 16px;
+            margin-inline: auto;
+
+            &>li {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 8px 16px;
+                border-radius: 100px;
+                background-color: var(--gray-300);
+
+                &>span {
+                    font: var(--text-md);
+                    color: var(--gray-500);
+                }
+
+
+            }
+        }
+    }
+
+    &>a{
+        margin-bottom: 57px;
+    }
+}
