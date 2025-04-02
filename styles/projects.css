@@ -1,0 +1,46 @@
+#projects {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font: var(--text-sm);
+    }
+
+    &>div {
+        margin-inline: 163px;
+        gap: 56px;
+
+        &>div {
+            gap: 8px;
+            text-align: center;  
+        }
+
+        #projects-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            &>li {
+                padding: 12px;
+                gap: 20px;
+                background-color: var(--gray-300);
+                border-radius: 12px;
+
+                &>img {
+                    width: 100%;
+                    border-radius: 12px;
+                }
+
+                &>div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                }
+            }
+        }
+    }
+}
