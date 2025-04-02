@@ -1,0 +1,43 @@
+#services-container {
+    background-color: var(--gray-100);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    &>section {
+        gap: 56px;
+        
+        p {
+            font: var(--text-sm);
+        }
+
+        &>div {
+            text-align: center;
+        }
+
+        &>ul {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+
+            &>li {
+                display: flex;
+                flex-direction: column;
+                border: var(--gray-200) solid 2px;
+                border-radius: 12px;
+                padding: 20px;
+                gap: 20px;
+
+                &>img {
+                    width: min-content;
+                }
+
+                &>div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                }
+            }
+        }
+    }
+}
